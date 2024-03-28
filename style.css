@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(https://wallpaperaccess.com/full/843517.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+img{
+    height: 200PX;
+    width: 200px;
+    position: absolute;
+    bottom: 500px;
+    animation-name: movimentar;
+    animation-duration: 25s;
+    animation-timing-function: ease ease-in ease-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: 3; 
+    animation-direction: alternate; 
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
+  /*  animation: movimentar 10s ease-in-out; */
+} 
+
+img:hover{
+    animation-play-state: paused;
+}
+@keyframes movimentar {
+from{
+    transform: translateX(0)
+}
+
+to{
+   transform: translateX(calc(100vw - 200px));  
+}
+
+}
+footer{
+    color: white;
+}
